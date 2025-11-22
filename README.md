@@ -7,10 +7,14 @@ Reproduction for
 1. Install `uv`
 2. Install dependencies: `uv sync`
 3. Run image generation script on different platform
-   - `./scripts/generate_image.py`.
+   - (MacOS/Linux): `./scripts/generate_image.py`
+   - (Windows): `uv run .\scripts\generate_image.py`
    - Results will be stored in `./results/<platform>.png`.
 4. Compare images
-   - `./scripts/diff_image.py ./results/<platform1>.png ./results/<platform2>.png`
+   - (MacOS/Linux):
+     `./scripts/diff_image.py ./results/<platform1>.png ./results/<platform2>.png`
+   - (Windows):
+     `uv run .\scripts\diff_image.py .\results\<platform1>.png .\results\<platform2>.png`
    - Results will be stored in `./results/diff_<platform1>_<platform2>.png`.
 
 ## Current behavior
@@ -22,10 +26,13 @@ Results:
 
 - MacOS (Tahoe 26.1): `results/darwin.png`
 - Linux (Ubuntu 24.04.3): `results/linux.png`
+- Windows (Windows 11): `results/windows.png`
 
 Diff:
 
 - MacOS vs. Linux: `results/diff_darwin_linux.png`
+- MacOS vs. Windows: `results/diff_darwin_windows.png`
+- Linux vs. Linux: `results/diff_linux_windows.png`
 
 ## Expected behavior
 
