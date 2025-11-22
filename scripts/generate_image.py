@@ -18,7 +18,7 @@ ROOT_PATH = Path(__file__).parent.parent.absolute()
 def main() -> None:
     font_path = ROOT_PATH / "assets" / "Roboto-Regular.ttf"
     font = ImageFont.truetype(font=font_path, size=FONT_SIZE)
-    image = Image.new(mode="RGBA", size=(600, 600), color=(255, 255, 255, 255))
+    image = Image.new(mode="RGB", size=(600, 600), color=(0, 0, 0))
     image_width, image_height = image.size
 
     draw = ImageDraw.Draw(im=image)
@@ -31,7 +31,7 @@ def main() -> None:
     draw.text(
         xy=(0, 0),
         text=TEXT,
-        fill=(0, 0, 0, OPACITY),
+        fill=(255, 255, 255, OPACITY),
         font=font,
     )
     image_text = image_text.rotate(
