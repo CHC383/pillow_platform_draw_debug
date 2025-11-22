@@ -15,4 +15,18 @@ Reproduction for
 
 ## Current behavior
 
+Images generated on different OS/platforms are inconsistent; the coordinates are
+slightly misaligned.
+
+Results:
+
+- MacOS (Tahoe 26.1): `results/darwin.png`
+- Linux (Ubuntu 24.04.3): `results/linux.png`
+
+Diff:
+
+- MacOS vs. Linux: `results/diff_darwin_linux.png`
+
 ## Expected behavior
+
+Images generated on different OS/platforms are consistent.
