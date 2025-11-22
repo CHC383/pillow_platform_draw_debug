@@ -28,10 +28,12 @@ Results:
 - Linux (Ubuntu 24.04.3): `results/linux.png`
 - Windows (Windows 11): `results/windows.png`
 
-Diff:
+Diff (Ran on MacOS):
 
 - MacOS vs. Linux: `results/diff_darwin_linux.png`
-- MacOS vs. Windows: `results/diff_darwin_windows.png`
+- MacOS vs. Windows:
+  - Original: `results/diff_darwin_windows.png`
+  - Level adjusted: `results/diff_darwin_windows_level_adjusted.png`
 - Linux vs. Linux: `results/diff_linux_windows.png`
 
 ## Expected behavior
